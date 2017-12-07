@@ -12,3 +12,25 @@ respond.min:让不支持css3 Media Query的浏览器包括IE6-IE8等其他浏览
  　　<script src="http://cdn.bootcss.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 
 <![endif]—>
+
+
+css3兼容浏览器 
+浏览器引擎前缀(Vendor Prefix)有哪些？
+
+-moz-     /* 火狐等使用Mozilla浏览器引擎的浏览器 */
+-webkit-  /* Safari, 谷歌浏览器等使用Webkit引擎的浏览器 */
+-o-       /* Opera浏览器(早期) */
+-ms-      /* Internet Explorer (不一定) */ 
+
+需要使用Vendor Prefixes的CSS3属性  注意 不带前缀的放在最后面
+
+主要的需要添加浏览器引擎前缀(vendor-prefix)的属性包括：
+
+@keyframes
+移动和变换属性(transition-property, transition-duration, transition-timing-function, transition-delay)
+动画属性 (animation-name, animation-duration, animation-timing-function, animation-delay)
+box-shadow
+backface-visibility
+column属性
+flex属性
+perspective属性
