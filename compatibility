@@ -34,3 +34,5 @@ backface-visibility
 column属性
 flex属性
 perspective属性
+// 查询一定时间范围内提交的代码量
+git log --author="your_name" --since ==2013-08.01 --until=2017-12-10 --pretty=tformat: --numstat | awk '{ add += $1; subs += $2; loc += $1 - $2 } END { printf "added lines: %s, removed lines: %s, total lines: %s\n", add, subs, loc }'
